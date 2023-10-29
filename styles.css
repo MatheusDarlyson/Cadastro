@@ -1,0 +1,118 @@
+/* Estilos para o corpo da página */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-white: #fff;
+    --color-pink: #d12f7a;
+    --color-black: #000000;
+    --color-brown: #A52A2A
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-white);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    background-color: var(--color-black);
+    padding: 0px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.header h1 {
+    text-align: left;
+    color: #fff;
+    margin: auto;
+
+}
+
+.header h2{
+    text-align: right;
+    color: var(--color-brown);
+    margin: auto;
+    font-size: smaller; 
+}
+
+/* Estilos para o formulário de cadastro */
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilos para a lista de alunos cadastrados */
+.listacad {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.listacad h2 {
+    margin: 0;
+}
+
+.listacad ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listacad ul li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+/* Estilos para os botões de atualizar e excluir na lista de alunos */
+.listacad ul li button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+

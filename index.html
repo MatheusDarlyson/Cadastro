@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>CRUD (Cadastro de Alunos)</title>
+</head>
+
+<!-- Cadastro (HEADER) -->
+<body>
+
+    <div class="header">
+        <h1>Cadastro de Alunos</h1>   
+        <h2>Equipe: Matheus Darlyson, Matheus Guerra, Ozias Nascimento</h2>
+</div>
+
+<!-- Dados que serão solicitados e registrados  -->
+    <div class="form">
+        <form id="formAluno">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required>
+            <label for="profissão">Profissão:</label>
+            <input type="text" id="profissão" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" required>
+            <label for="telefone">Telefone:</label>
+            <input type="number" id="telefone" required>
+            <button type="button" onclick="salvarAluno()">Salvar</button>
+            <button type="button" id="btnAtualizar" onclick="atualizarAluno()" style="display:none;">Atualizar</button>
+        </form>
+    </div>
+    
+<!-- Listagem pós Cadastro  -->
+    <div class="listacad">
+        <h2>Alunos Cadastrados</h2>
+        <ul id="listaAlunos"></ul>
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+
+
+</html>
